@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - UPI AlertBox</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; padding: 20px; color: #333; max-width: 800px; margin: auto; }
+        h1 { color: #2c3e50; }
+        h2 { color: #2980b9; margin-top: 20px; }
+        ul { margin-bottom: 20px; }
+    </style>
+</head>
+<body>
+    <h1>Privacy Policy for UPI AlertBox</h1>
+    <p><strong>Last updated: June 28, 2026</strong></p>
+
+    <p>This Privacy Policy describes how <strong>UPI AlertBox</strong> collects, uses, and protects information when you use our application.</p>
+
+    <h2>1. Data Collection and Usage</h2>
+    <ul>
+        <li><strong>Local Processing:</strong> UPI AlertBox is designed to process financial notification alerts locally on your device.</li>
+        <li><strong>Notification Access:</strong> The app utilizes the <code>NotificationListenerService</code> to detect incoming payment notifications from your selected UPI and banking applications.</li>
+        <li><strong>Data Storage:</strong> All transaction details (sender name, amount, and timestamp) are stored exclusively in your device's local <code>SharedPreferences</code>. We do not collect, store, or transmit your personal financial information to any external server or third-party database.</li>
+    </ul>
+
+    <h2>2. Permissions</h2>
+    <p>To provide its core functionality, the app requires the following permissions:</p>
+    <ul>
+        <li><strong>Notification Access:</strong> Required to read payment alerts from third-party apps.</li>
+        <li><strong>Overlay/Display over other apps:</strong> Required to show fullscreen pop-up alerts during locked-screen transactions.</li>
+    </ul>
+
+    <h2>3. Data Sharing</h2>
+    <p>We do not share, sell, or disclose your data to any third party. Your information remains entirely within your control on your device.</p>
+
+    <h2>4. Contact Us</h2>
+    <p>If you have any questions or concerns about our privacy practices, please contact us:</p>
+    <ul>
+        <li><strong>Email:</strong> jolomart9@gmail.com</li>
+        <li><strong>Support Number:</strong> +91 6295353288</li>
+    </ul>
+</body>
+</html>
