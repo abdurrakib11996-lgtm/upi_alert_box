@@ -8,13 +8,9 @@
 <style>
   :root {
     --blue: #2980b9;
-    --blue-light: #5dade2;
-    --blue-dark: #1f618d;
     --bg: #f4f7f6;
-    --surface: #ffffff;
     --text: #1a1410;
     --text-muted: #6b5e52;
-    --border: #ede8e2;
     --accent-bg: #eaf2f8;
   }
   * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -40,7 +36,7 @@
 <div class="container">
   <div class="section">
     <h2>1. Overview</h2>
-    <p>UPI AlertBox is designed to help shopkeepers receive instant voice confirmations for financial transactions. We prioritize your privacy and ensure your transaction data remains secure on your device.</p>
+    <p>UPI AlertBox helps shopkeepers receive instant voice confirmations for financial transactions. We prioritize your privacy and ensure your transaction data remains secure on your device.</p>
     <div class="highlight">
       <strong>🔒 Privacy Commitment:</strong> We do not collect, store, or transmit your personal financial information to any external server. All data processing happens locally on your device.
     </div>
@@ -48,27 +44,30 @@
 
   <div class="section">
     <h2>2. Data Collection & Permissions</h2>
-    <p>The app requires specific permissions to perform its core functions:</p>
+    <p>To provide our services, the app requires the following permissions:</p>
     <ul>
-      <li><strong>Notification Access:</strong> Used exclusively to detect incoming payment notifications from your UPI/banking apps.</li>
-      <li><strong>Overlay (Display over other apps):</strong> Required to show instant, full-screen transaction alerts on your device.</li>
+      <li><strong>Notification Listener:</strong> Automatically reads incoming push notifications from banking apps to track transactions.</li>
+      <li><strong>Push Notifications:</strong> Required on Android 13+ for continuous app alerts and status updates.</li>
+      <li><strong>Display Overlay:</strong> Allows the app to show full-screen payment popup alerts over other apps.</li>
+      <li><strong>Ignore Battery Optimization:</strong> Ensures the notification tracking service runs reliably in the background.</li>
+      <li><strong>Full Screen Intent:</strong> Enables transaction reports to pop up immediately when you unlock your device.</li>
+      <li><strong>Internet Access:</strong> Used for loading rewarded ads (AdMob/StartApp) and online payment validation.</li>
     </ul>
-    <p><strong>Note:</strong> We do not store transaction history on any cloud database. All details (sender name, amount, timestamp) are stored in your device's local <code>SharedPreferences</code> only.</p>
+    <p><strong>Note:</strong> All transaction details are stored locally in your device's <code>SharedPreferences</code>.</p>
   </div>
 
   <div class="section">
-    <h2>3. Data Usage</h2>
-    <p>Your data is used solely to:</p>
-    <ul>
-      <li>Provide real-time voice alerts for your transactions.</li>
-      <li>Show transaction details on your screen for quick verification.</li>
-    </ul>
-    <p>We do not use your data for advertising, analytics, or profiling.</p>
+    <h2>3. Firebase Services</h2>
+    <p>We use Firebase services to securely manage app updates and analyze app performance. Firebase may collect basic device data and usage statistics to ensure a stable and secure experience[cite: 8]. As Firebase is a service provided by Google, please refer to <a href="https://policies.google.com/privacy">Google’s Privacy Policy</a> for more details[cite: 8].</p>
   </div>
 
   <div class="section">
-    <h2>4. Contact Us</h2>
-    <p>If you have any questions or concerns, please feel free to reach out:</p>
+    <h2>4. Data Usage</h2>
+    <p>Your data is used solely to provide real-time voice alerts and transaction verification. We do not use your data for unauthorized profiling.</p>
+  </div>
+
+  <div class="section">
+    <h2>5. Contact Us</h2>
     <p><strong>Email:</strong> jolomart9@gmail.com</p>
   </div>
 </div>
